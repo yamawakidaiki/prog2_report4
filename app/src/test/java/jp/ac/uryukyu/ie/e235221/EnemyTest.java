@@ -7,7 +7,7 @@ package jp.ac.uryukyu.ie.e235221;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class EnemyTest {
+public class EnemyTest {
 	@Test
 	void attackTest() {
 		int defaultHeroHp = 100;
@@ -18,5 +18,19 @@ class EnemyTest {
 		}
 		slime.attack(demoHero);
 		assertEquals(defaultHeroHp, demoHero.getHitPoint());
+	}
+
+	@Test
+	public void testAttackAfterDeath() {
+		Hero hero = new Hero("勇者", 10, 5);
+		Enemy enemy = new Enemy("スライム", 6, 3);
+
+		enemy.attack(hero);
+		enemy.attack(hero);
+		enemy.attack(hero);
+		enemy.attack(hero); // ここでenemyは死亡しているはず
+
+		assertTrue(enemy.isDead());
+		assertEquals(10, hero.getHitPoint()); // heroのHPは変わらないはず
 	}
 }

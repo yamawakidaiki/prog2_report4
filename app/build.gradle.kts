@@ -8,6 +8,28 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
+
+	// 以降，add files
+	    id("java")
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
+}
+
+tasks.named<Test>("test") {
+    useJUnitPlatform()
+}
+
+tasks.withType<Jar> {
+    manifest {
+        attributes["Main-Class"] = "Main"
+    }
 }
 java {                                      
     sourceCompatibility = JavaVersion.VERSION_17
