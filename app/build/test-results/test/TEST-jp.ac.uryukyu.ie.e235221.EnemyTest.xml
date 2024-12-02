@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="jp.ac.uryukyu.ie.e235221.EnemyTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2024-12-02T23:25:47" hostname="DMacBook-Air" time="0.015">
+  <properties/>
+  <testcase name="attackTest()" classname="jp.ac.uryukyu.ie.e235221.EnemyTest" time="0.009"/>
+  <testcase name="testAttackAfterDeath()" classname="jp.ac.uryukyu.ie.e235221.EnemyTest" time="0.005">
+    <failure message="org.opentest4j.AssertionFailedError: 最初の攻撃後、HPは減少するはず ==&gt; expected: &lt;2&gt; but was: &lt;9&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 最初の攻撃後、HPは減少するはず ==&gt; expected: &lt;2&gt; but was: &lt;9&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at app//jp.ac.uryukyu.ie.e235221.EnemyTest.testAttackAfterDeath(EnemyTest.java:33)
+	at java.base@21.0.4/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.4/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.4/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <system-out><![CDATA[デモ勇者の攻撃！スライムもどきに44のダメージを与えた！
+スライムもどきは倒れた。
+モンスタースライムもどきは倒れた。
+デモ勇者の攻撃！スライムもどきに16のダメージを与えた！
+スライムもどきは倒れた。
+モンスタースライムもどきは倒れた。
+デモ勇者の攻撃！スライムもどきに64のダメージを与えた！
+スライムもどきは倒れた。
+モンスタースライムもどきは倒れた。
+デモ勇者の攻撃！スライムもどきに86のダメージを与えた！
+スライムもどきは倒れた。
+モンスタースライムもどきは倒れた。
+デモ勇者の攻撃！スライムもどきに98のダメージを与えた！
+スライムもどきは倒れた。
+モンスタースライムもどきは倒れた。
+デモ勇者の攻撃！スライムもどきに44のダメージを与えた！
+スライムもどきは倒れた。
+モンスタースライムもどきは倒れた。
+デモ勇者の攻撃！スライムもどきに86のダメージを与えた！
+スライムもどきは倒れた。
+モンスタースライムもどきは倒れた。
+デモ勇者の攻撃！スライムもどきに90のダメージを与えた！
+スライムもどきは倒れた。
+モンスタースライムもどきは倒れた。
+デモ勇者の攻撃！スライムもどきに5のダメージを与えた！
+スライムもどきは倒れた。
+モンスタースライムもどきは倒れた。
+デモ勇者の攻撃！スライムもどきに22のダメージを与えた！
+スライムもどきは倒れた。
+モンスタースライムもどきは倒れた。
+スライムの攻撃！勇者に1のダメージを与えた！
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

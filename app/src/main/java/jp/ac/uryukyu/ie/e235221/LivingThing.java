@@ -12,7 +12,11 @@ public class LivingThing {
 		this.attack = attack;
 		this.dead = false;
 	}
-
+	
+	public int getHitPoint() {
+        	return hitPoint;
+    	}
+	
 	public boolean isDead() {
 		return dead;
 	}

@@ -1,15 +1,25 @@
-package jp.ac.uryukyu.ie.e235221;
+public class Hero {
+	private String name;
+	private int hitPoint;
+	private int attack;
 
-public class Hero extends LivingThing {
 	public Hero(String name, int hitPoint, int attack) {
-		super(name, hitPoint, attack);
+		this.name = name;
+		this.hitPoint = hitPoint;
+		this.attack = attack;
 	}
 
-	@Override
-	public void wounded(int damage) {
-		super.wounded(damage);
-		if (isDead()) {
-			System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", getName());
+	public int getHitPoint() {
+		return hitPoint;
+	}
+
+	public void attack(Enemy enemy) {
+		if (!enemy.isDead()) { // 敵が死んでいない場合のみ攻撃
+			enemy.takeDamage(this.attack);
 		}
+	}
+
+	public void takeDamage(int damage) {
+		this.hitPoint -= damage;
 	}
 }

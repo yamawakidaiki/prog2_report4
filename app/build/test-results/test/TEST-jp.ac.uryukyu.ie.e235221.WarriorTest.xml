@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="jp.ac.uryukyu.ie.e235221.WarriorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-02T23:25:47" hostname="DMacBook-Air" time="0.0">
+  <properties/>
+  <testcase name="testAttackWithWeponSkill()" classname="jp.ac.uryukyu.ie.e235221.WarriorTest" time="0.0"/>
+  <system-out><![CDATA[勇者の攻撃！ウェポンスキルを発動！スライムに15のダメージを与えた！！
+勇者の攻撃！ウェポンスキルを発動！スライムに15のダメージを与えた！！
+勇者の攻撃！ウェポンスキルを発動！スライムに15のダメージを与えた！！
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
